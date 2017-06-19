@@ -1,0 +1,129 @@
+# Site settings
+baseurl = "http://www.groz.co/"
+languageCode = "en-us"
+title = "Agency"
+theme = "hugo-agency-theme"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+  # To provide some metadata for search engines feel free to add a few
+  # information about you and your website.
+  name = "Groz Co"
+  description = "CTO as a service, CPG, Elastic Development Services"
+
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+  favicon    = "favicon.ico"
+
+  # Possibility to disable external/additional fonts
+  # Exception: Fontawesome
+  disableFonts = false
+
+  # 404 error customization
+  [params.error404]
+    heading = "Page couldn't be found"
+    text = "Please visit [this page](/)"
+
+  # Navigation
+  [params.navigation]
+    brand = "Groz Co"
+    #logo = "logo.svg"
+    services = "Services"
+    portfolio = "Partners"
+    team = "Team"
+    contact = "Contact"
+
+  # Hero section
+  [params.hero]
+    title = "Lost in the woods?"
+    subtitle = "Let us lead the way"
+    buttonText = "Discover"
+
+
+  # Services section
+  [params.services]
+    enable = true
+    title = "Services"
+    subtitle = ""
+
+    [[params.services.row]]
+
+    [[params.services.row.list]]
+      icon = "fa-lightbulb-o"
+      title = "CTO as a Service"
+      description = "Struggling to make sense of your technology? Having trouble hiring? Bring in one of our experienced CTOs to help translate between your business needs and the technology that enables it."
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-gears"
+      title = "Elastic Software Development"
+      description = "Let us take on the burden of hiring, training and managing an experienced development staff. You focus on your business and we will deliver the technology as your budget allows."
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-sitemap"
+      title = "BigData, Analytics, AI"
+      description = "Data ingestion, clean-up, enrichment -- big, medium or small. Analytics, discovery. Machine Learning, Artifical Intelligence, Model Building. We cover it all!"
+      url = "#"
+
+
+  # Portfolio section
+  [params.portfolio]
+    enable = false
+
+
+  # About section
+  [params.about]
+    enable = false
+    title = "About"
+    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    endpoint = "Be part<br>of our<br>story!"
+
+
+  # Team section
+  [params.team]
+    enable = true
+    # Possibility to center items
+    #center = true
+    title = "Our amazing team"
+    subtitle = ""
+    description = ""
+
+    # All team member's pictures are stored under 'static/img/team'.
+    # Replace them with your own too.
+    # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
+    [[params.team.members]]
+      img = "rob.jpg"
+      name = "Rob Grzywinski"
+      position = "Founder / CEO"
+      bio = """Rob is a Silicon Valley CTO with multiple successful exits. He combines entrepreneurial instinct, stellar technical skills and infectious enthusiasm for transforming the impossible into possible. Establishes rapport with members of diverse groups and is a universal translator between business, product and technology. Recognizes excellence in individuals, provides effective mentoring and inspires to achieve their potential. Decisive leader that fosters a culture of accountability, integrity and respect."""
+      social = [
+        ["fa-linkedin", "https://www.linkedin.com/in/rob-grzywinski-26b31/"]
+      ]
+
+  # Client section
+    [params.clients_list]
+      enable = true
+      # Possibility to center items
+      center = true
+      # Optional client title specifying the involvement
+      title = "Our Partners"
+
+      [[params.clients]]
+        logo = "intersog.png"
+        link = "https://intersog.com/"
+
+  # Contact section
+  [params.contact]
+    enable = true
+    headline = "Let's Get In Touch!"
+    description = "Give us a call or send us an email and let's get started!"
+    phone = "(415) 745-2893"
+    email = "info@groz.co"
+
+  # Footer section
+  [params.footer]
+    enable = false
